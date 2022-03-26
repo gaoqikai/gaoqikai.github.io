@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        .container {
+  position: relative;
+  width: 100%;
+}
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .container .btn {
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(255, 101, 30);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+        </style>
 <body>
 <h1>Hello World</h1>
 <p>I'm index.</p>
 <a href="page1.html">Go to page1.</a>
+<div class="container">
 <img src="Home.png"></img>
+<button class="btn" onclick="location.href = 'page1.html'">Button</button>
+</div>
 </body>
 </html>
