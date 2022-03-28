@@ -22,7 +22,7 @@ var clickCount = 0;
 
 figmaframe.addEventListener("onclick", function(ev){
   clickCount ++;
-  console.log(`the number of clicks made is ${clickCount}`)
+  console.log(`the number of clicks made is ${clickCount}`);
               }, 
                            Modernizr.passiveeventlisteners ? {passive: true} : false);
 
