@@ -7,7 +7,7 @@ var clickCount = 0;
 figmaframe.addEventListener
 
 figmaframe.addEventListener("onclick", function(ev){
-  console.log("clicked!);
+  console.log("clicked!");
   clickCount ++;
               }
                             );
