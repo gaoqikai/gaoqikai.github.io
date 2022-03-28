@@ -12,7 +12,7 @@ try {
 } catch (e) {};
 
 // Use our detect's results. passive applied if supported, capture will be false either way.
-figmaframe.node.addEventListener('touchstart', fn, supportsPassive ? { passive: true } : false); 
+figmaframe.addEventListener('touchstart', fn, supportsPassive ? { passive: true } : false); 
 
 var figmaframe = document.getElementById("figmaUI");
 
