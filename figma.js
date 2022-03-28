@@ -12,7 +12,7 @@ try {
 } catch (e) {};
 
 // Use our detect's results. passive applied if supported, capture will be false either way.
-figmaframe.addEventListener('touchstart', fn, supportsPassive ? { passive: true } : false); 
+figmaframe.node.addEventListener('touchstart', fn, supportsPassive ? { passive: true } : false); 
 
 var figmaframe = document.getElementById("figmaUI");
 
@@ -20,7 +20,7 @@ var clickCount = 0;
 
 //figmaframe.addEventListener
 
-figmaframe.addEventListener("onclick", function(ev){
+figmaframe.node.addEventListener("onclick", function(ev){
   clickCount ++;
   console.log(`the number of clicks made is ${clickCount}`);
               }, 
